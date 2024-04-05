@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Input = () => {
+const Input = ({ }) => {
+    const [txt, setTxt] = useState('')
     return (
         <>
-            <Input />
+            <p>{txt}</p>
+            <input
+                onChange={(e) => {
+                    console.log(e.target.value);
+                }}
+                type="text" />
+
         </>
     )
 }
