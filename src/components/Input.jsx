@@ -7,7 +7,7 @@ const Input = ({ }) => {
             <p>{txt}</p>
             <input
                 onChange={(e) => {
-                    console.log(e.target.value);
+                    setTxt(e.target.value);
                 }}
                 type="text" />
 
