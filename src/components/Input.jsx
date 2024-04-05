@@ -4,12 +4,16 @@ const Input = ({ }) => {
     const [txt, setTxt] = useState('')
     return (
         <>
-            <p>{txt.toUpperCase()}</p>
+            <p>{txt}</p>
             <input
                 onChange={(e) => {
-                    setTxt(e.target.value);
+                    setTxt(e.target.value.toUpperCase());
                 }}
                 type="text" />
+            <button onClick={() => {
+                console.log(txt);
+            }}
+            >click</button>
 
         </>
     )
