@@ -4,7 +4,7 @@ const Input = ({ }) => {
     const [txt, setTxt] = useState('')
     return (
         <>
-            <p>{txt}</p>
+            <p>{txt.toUpperCase()}</p>
             <input
                 onChange={(e) => {
                     setTxt(e.target.value);
